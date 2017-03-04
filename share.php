@@ -1,9 +1,9 @@
 <?php
  
 /* == ID tài khoản muốn tăng share == */
-$user = 'Kenh76.vn';
+$user = '100013724658166';
 /* == Token tài khoản chứa page == */
-$token = 'Kenh76';
+$token = 'EAAAAAYsX7TsBAAUtojOK90UZCbE2ORMrrBCCUwOrbKLbaYvRmZAffWFeAu1fqC2FdGUgDMcEmL9qWRFIFFWgmsZAg7DpGo350vnIrgud0AjbbqI0FWyejsieWQbUBZC7y0lleamnnophXKetZChGRjej180zXzuCH7S8Mr0ShhevdPA1ZCEDxFMO6dvd0FYlF42jSey42dAgZDZD';
 $accounts = json_decode(cURL('https://graph.facebook.com/me/accounts?access_token=' . $token),true);
  
 $feed = json_decode(cURL('https://graph.facebook.com/' . $user . '/feed?access_token='.$token.'&limit=1'),true);
